@@ -23,6 +23,6 @@ the second is the depth to which the crawler should crawl. This is necessary
 because the crawler will not get caught up crawling the links to an indefinite
 depth. Following are the commands:
 
->>> from web-crawler import crawl_web
->>> crawl_web(seed_page_url_in_quotes, max_depth)
+<b>from web-crawler import crawl_web</b>
+crawl_web(seed_page_url_in_quotes, max_depth)
 #crawl_web("http://www.dit.edu.in", 1) 
