@@ -25,4 +25,4 @@ depth. Following are the commands:
 
 <b>from web-crawler import crawl_web</b><br>
 <b>crawl_web(seed_page_url_in_quotes, max_depth)</b><br>
-##crawl_web("http://www.dit.edu.in", 1) 
+/#crawl_web("http://www.dit.edu.in", 1) 
