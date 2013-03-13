@@ -77,10 +77,3 @@ def crawl_web(seed_page, max_depth):
              to_crawl, next_depth = next_depth, []
              depth = depth + 1
     return index
-
-
-def lookup(index, keyword):
-    if keyword in index:
-       return index[keyword]
-    else:
-       return None
