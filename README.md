@@ -24,5 +24,4 @@ because the crawler will not get caught up crawling the links to an indefinite
 depth. Following are the commands:
 
 <b>>>> from web-crawler import crawl_web</b><br>
-<b>>>> crawl_web(seed_page_url_in_quotes, max_depth)</b><br>
-<b>#crawl_web("http://www.dit.edu.in", 1)</b><br>
+<b>>>> crawl_web(seed_page_url_in_quotes, max_depth)       #crawl_web("http://www.dit.edu.in", 1)</b><br>
