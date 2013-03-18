@@ -27,13 +27,13 @@ cloned directory. Following are the commands:
 
 <b>>>> from web-crawler import crawl_web</b><br>
 <b>>>> index = crawl_web(seed_page_url_in_quotes, max_depth)</b><br>
-<b>#crawl_web("http://www.personal.kent.edu/~rmuhamma/OpSystems/os.html", 1)</b><br><br>
+<b>#crawl_web("http://www.personal.kent.edu/~rmuhamma/OpSystems/os.html", 1)</b><br>
 
 The first command imports the crawl_web method from the web-crawler module. In 
 the next command we crawl the web starting from the seed page(first parameter) upto
 a given depth(second parameter). The crawler crawls the web and builds an index of
 keywords mapping to their respective URL(s) in a dictionary data-type. On completion
-the method returns the index which is being stored in the variable <i>index</i>.
+the method returns the index which is being stored in the variable <i>index</i>.<br><br>
 
 
 ______________
