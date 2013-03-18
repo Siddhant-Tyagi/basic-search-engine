@@ -1,12 +1,27 @@
+'''This web-crawler module makes use of the urllib2 and
+urlparse module. The urrlib2 is used for establishing and 
+maintaining a connection with a host while the urlparse is
+used in the process of converting relative URL(s) into
+absolute URL(s)'''
 import urllib2
 from urlparse import urljoin
 
+'''The get_html method is where the crawler establishes a
+connection to a given URL using the urllib2 module. It reads
+the source code or the html coding of a web-page and returns it
+to the calling method.'''
 def get_html(url):
     try:
         return urllib2.urlopen(url).read()
     except:
         return ""    
 
+'''The get_next_target method is where the crawler performs its
+basic function i.e. identifying and parsing the links given on a web-page.
+It searches for the anchor tag in the html coding and separate the links.
+The basic functionality of this method is to provide the calling method 
+with the next link occurrence on the page. It takes the html coding of a
+given web-page as a parameter.'''
 def get_next_target(page):
     start_link = page.find("<a href=")
     if start_link == -1:
@@ -26,6 +41,7 @@ def get_next_target(page):
     return url, end_quote, tag
 
 
+'''  '''
 def get_all_links(page, base_url, index):
     links = []
     while True:
