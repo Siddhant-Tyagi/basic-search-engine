@@ -41,7 +41,12 @@ def get_next_target(page):
     return url, end_quote, tag
 
 
-'''  '''
+'''The get_all_links method calls the get_next_target method to fetch the
+next available link from the web page. The link, if happens to be a relative
+url is being converted into absolute url and is added to the index in the
+dictionary with the keyword associated with the url as the key and the
+actual url as the value in the dictionary. The method returns the list of
+the links and the index.'''
 def get_all_links(page, base_url, index):
     links = []
     while True:
