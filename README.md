@@ -23,17 +23,12 @@ the second is the depth to which the crawler should crawl. This is necessary
 because the crawler will not get caught up crawling the links to an indefinite
 depth. Any natural number may be used for the max_depth as long as it satisfies
 your requirement.Initialize the python console, make sure you are working in the
-cloned directory. Following are the commands:
+cloned directory. Following is the command in the Linux shell:
 
-<b>>>> from web-crawler import crawl_web</b><br>
-<b>>>> index = crawl_web(seed_page_url_in_quotes, max_depth)</b><br>
-<b>#crawl_web("http://www.personal.kent.edu/~rmuhamma/OpSystems/os.html", 1)</b><br>
+<b>$ python web-crawler.py url </b><br>
 
-The first command imports the crawl_web method from the web-crawler module. In 
-the next command we crawl the web starting from the seed page(first parameter) upto
-a given depth(second parameter). The crawler crawls the web and builds an index of
-keywords mapping to their respective URL(s) in a dictionary data-type. On completion
-the method returns the index which is being stored in the variable <i>index</i>.<br><br>
+The python module takes the url as the first command line argument. If successful it will print the URLs mapped to a keyword. The crawler crawls the web and builds an index of
+keywords mapping to their respective URL(s) in a dictionary data-type.<br><br>
 
 
 ______________
