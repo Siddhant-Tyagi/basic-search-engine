@@ -22,7 +22,9 @@ seed page i.e. the page from where the crawler will commence the crawling and
 the second is the depth to which the crawler should crawl. This is necessary 
 because the crawler will not get caught up crawling the links to an indefinite
 depth. Any natural number may be used for the max_depth as long as it satisfies
-your requirement.Initialize the python console, make sure you are working in the
+your requirement.
+
+Make sure you are working in the
 cloned directory. Following is the command in the Linux shell:
 
 <b>$ python web-crawler.py url </b><br>
