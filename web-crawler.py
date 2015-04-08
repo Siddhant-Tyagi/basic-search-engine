@@ -5,6 +5,7 @@ used in the process of converting relative URL(s) into
 absolute URL(s)'''
 import urllib2
 from urlparse import urljoin
+import sys
 
 '''The get_html method is where the crawler establishes a
 connection to a given URL using the urllib2 module. It reads
@@ -98,3 +99,12 @@ def crawl_web(seed_page, max_depth):
              to_crawl, next_depth = next_depth, []
              depth = depth + 1
     return index
+
+if __name__=='__main__':
+    url = sys.argv[1] if len(sys.argv) >=1 else None
+    if url:
+        index = crawl_web(url, 0)
+        for key in index:
+            print key + ": \n"
+            for url in index[key]:
+                print url + "\n"
